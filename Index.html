@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>nps | Student Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a class="logo" href="#home">3.10</a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button id="themeButton" type="button">
+                Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction -->
+        <section id="home" class="hero container">
+            <div>
+                <p class="intro">Hello, welcome to my portfolio!</p>
+
+                <h1>I am <span>Naing Pyae Sone.</span></h1>
+
+                <h2>Student & Beginner Web Developer</h2>
+
+                <p>
+                    I am learning HTML, CSS, and JavaScript.
+                    I enjoy creating websites and solving problems.
+                </p>
+
+                <a href="#projects" class="button">View My Projects</a>
+            </div>
+
+            <!-- Students can replace this with their own photo later -->
+            <div class="avatar" aria-label="Alex Johnson initials">N</div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section container">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Naing Pyae Sone. I am a programming student from Meiktila.
+                My goal is to become a Games developer. In my free time,
+                I enjoy playing games, playing football, and learning new thing.
+            </p>
+
+            <div class="about-details">
+                <p><strong>School:</strong> Learning Academy</p>
+                <p><strong>Location:</strong> Meiktila, Myanmar</p>
+                <p><strong>Interest:</strong> Games Development</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section container">
+            <h2>My Skills</h2>
+
+            <div class="grid">
+                <article class="card">
+                    <h3>HTML</h3>
+                    <p>I can create headings, paragraphs, links, and forms.</p>
+                </article>
+
+                <article class="card">
+                    <h3>CSS</h3>
+                    <p>I can style colors, spacing, cards, and page layouts.</p>
+                </article>
+
+                <article class="card">
+                    <h3>JavaScript</h3>
+                    <p>I am learning variables, functions, and button events.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section container">
+            <h2>My Projects</h2>
+
+            <div class="grid">
+                <article class="card">
+                    <div class="project-icon">📄</div>
+                    <h3>Personal Profile</h3>
+                    <p>A simple page that introduces my hobbies and interests.</p>
+
+                    <button
+                        type="button"
+                        class="project-button"
+                        data-project="Personal Profile">
+                        View Details
+                    </button>
+                </article>
+
+                <article class="card">
+                    <div class="project-icon">🧮</div>
+                    <h3>Calculator</h3>
+                    <p>A practice project for basic calculations.</p>
+              <a
+              class="project-button"
+              href="../Mini_Projects/%20Simple%20Calculator/index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                    <button
+                        type="button"
+                        class="project-button"
+                        data-project="Calculator">
+                        View Details
+                    </button>
+                </article>
+
+                <article class="card">
+                    <div class="project-icon">✅</div>
+                    <h3>To-Do List</h3>
+                    <p>A project idea for managing my learning tasks.</p>
+
+                    <button
+                        type="button"
+                        class="project-button"
+                        data-project="To-Do List">
+                        View Details
+                    </button>
+                </article>
+            </div>
+
+            <p id="projectMessage" class="message" aria-live="polite"></p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section container">
+            <h2>Contact Me</h2>
+
+            <p>Email: Nober@example.com</p>
+            <p>This practice form displays a message on the page.</p>
+
+            <form id="contactForm">
+                <label for="visitorName">Your Name</label>
+                <input
+                    type="text"
+                    id="visitorName"
+                    name="visitorName"
+                    placeholder="Enter your name"
+                    maxlength="100"
+                    required>
+
+                <label for="visitorEmail">Your Email</label>
+                <input
+                    type="email"
+                    id="visitorEmail"
+                    name="visitorEmail"
+                    placeholder="Enter your email"
+                    required>
+
+                <label for="visitorMessage">Message</label>
+                <textarea
+                    id="visitorMessage"
+                    name="visitorMessage"
+                    rows="4"
+                    placeholder="Write your message"
+                    maxlength="1000"
+                    required></textarea>
+
+                <button type="submit" class="button">Submit Message</button>
+
+                <p id="formMessage" class="message" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> Naing Pyae Sone. Student.</p>
+    </footer>
+
+</body>
+</html>
